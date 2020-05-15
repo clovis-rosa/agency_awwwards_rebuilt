@@ -5,6 +5,14 @@
 @import './components/banner.scss';
 @import './components/cases.scss';
 
+*,
+::after,
+::before {
+  // margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   user-select: none;
