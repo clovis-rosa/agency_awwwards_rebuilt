@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
-@import "./varibles.scss";
-@import "./breakpoints.scss";
-@import "./components/header.scss";
-@import "./components/banner.scss";
-@import "./components/cases.scss";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap');
+@import './varibles.scss';
+@import './breakpoints.scss';
+@import './components/header.scss';
+@import './components/banner.scss';
+@import './components/cases.scss';
 
 body,
 html {
@@ -11,27 +11,27 @@ html {
   background: $white;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  width: 1560px;
-  min-width: 1560px;
+  width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
   height: 100%;
-  @include media("<=1560px") {
+  @include media('<=1560px') {
     width: 1280px;
     min-width: 1280px;
   }
-  @include media("<=desktop") {
+  @include media('<=desktop') {
     width: 1080px;
     min-width: 1080px;
   }
-  @include media("<=1080px") {
+  @include media('<=1080px') {
     width: 100%;
     min-width: 100%;
   }
@@ -39,7 +39,7 @@ html {
     display: flex;
     height: 100%;
     padding: 0 32px;
-    @include media("<=phone") {
+    @include media('<=phone') {
       padding: 0 16px;
     }
   }
