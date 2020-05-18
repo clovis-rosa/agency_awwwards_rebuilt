@@ -4,6 +4,7 @@
 @import './components/header.scss';
 @import './components/banner.scss';
 @import './components/cases.scss';
+@import './components/intro-overlay.scss';
 
 *,
 ::after,
@@ -15,6 +16,7 @@
 
 body,
 html {
+  visibility: hidden; // GSAP configuration at App.js
   user-select: none;
   background: $white;
   overscroll-behavior: none;
@@ -62,6 +64,7 @@ html {
 .container-fluid {
   width: 100%;
   height: 100%;
+
   .row {
     display: flex;
     height: 100%;
