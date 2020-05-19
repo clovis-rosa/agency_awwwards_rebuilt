@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap');
 @import './varibles.scss';
 @import './breakpoints.scss';
+@import './components/navigation.scss';
 @import './components/header.scss';
 @import './components/banner.scss';
 @import './components/cases.scss';
@@ -68,5 +69,21 @@ html {
   .row {
     display: flex;
     height: 100%;
+  }
+}
+
+.App {
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background: $white;
+  .row {
+    display: flex;
+    align-items: center;
   }
 }
