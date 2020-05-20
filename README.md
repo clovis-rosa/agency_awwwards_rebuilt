@@ -2,7 +2,7 @@
 
 > Recriation of the [Mel River Agency](https://melriver.com/) throungh Awwwards
 
-[**Demo Site**](https://minimal-article.000webhostapp.com/)
+Website deployed at Vercel.com - [** Agency Rebuilt - https://agency-rebuilt.now.sh/**](https://agency-rebuilt.now.sh/)
 
 Screenshot: 
 ![example image](screenshot_2020-05-06.png "agency_awwwards_rebuilt")
