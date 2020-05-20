@@ -2,7 +2,7 @@
   height: 50vh;
   height: calc(var(--vh, 1vh) * 50);
 
-  .cases-navegation {
+  .cases-navigation {
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -12,6 +12,7 @@
     z-index: 6;
     padding: 32px;
     box-sizing: border-box;
+
     @include media('<=tablet') {
       display: none;
     }
@@ -46,13 +47,15 @@
       position: relative;
       background: $black;
       cursor: pointer;
+
       &:hover {
         .case-image {
           opacity: 0.4;
         }
       }
+
       .case-details {
-        width: 33.333vw;
+        width: 33.3333vw;
         height: 50vh;
         height: calc(var(--vh, 1vh) * 50);
         display: flex;

@@ -11,7 +11,7 @@ const Banner = () => {
               <span>Creating unique brands is</span>
             </div>
             <div className="line">
-              <span>What we do.</span>
+              <span>what we do.</span>
             </div>
           </h2>
           <div className="btn-row">

@@ -6,13 +6,13 @@ const caseStudies = [
   {
     id: 1,
     subtitle: 'Curology',
-    title: "A custom formule for your skin's unique needs",
+    title: 'A custom formula for your skin’s unique needs',
     img: 'curology-min',
   },
   {
     id: 2,
-    subtitle: 'Yourpace',
-    title: 'Open space floor plans for your next venture',
+    subtitle: 'Yourspace',
+    title: 'Open space floor plans for you next venture',
     img: 'yourspace-min',
   },
   {
@@ -27,7 +27,7 @@ const Cases = () => {
   return (
     <section className="cases">
       <div className="container-fluid">
-        <div className="cases-navegation">
+        <div className="cases-navigation">
           <div className="cases-arrow prev disabled">
             <CasesPrev />
           </div>

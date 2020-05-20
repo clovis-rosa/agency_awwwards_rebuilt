@@ -2,13 +2,12 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='page'>
+    <div className="page">
       <div className="container">
         <div className="row">
-          <h3>This is the Services</h3>
+          <h3>This is the services page</h3>
         </div>
       </div>
-
     </div>
   )
 }

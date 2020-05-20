@@ -1,69 +1,71 @@
 import React, { useEffect, useState } from 'react'
-import gsap from 'gsap';
 import IntroOverlay from '../components/IntroOverlay'
 import Banner from '../components/Banner'
 import Cases from '../components/Cases'
+import gsap from 'gsap'
 
-
-// On load Timeline - GSAP
-const tl = gsap.timeline()
+let tl = gsap.timeline()
 
 const homeAnimation = (completeAnimation) => {
-
   tl.from('.line span', 1.8, {
     y: 100,
-    ease: "power4.out",
+    ease: 'power4.out',
     delay: 1,
     skewY: 7,
     stagger: {
-      amount: 0.3
-    }
+      amount: 0.3,
+    },
   })
     .to('.overlay-top', 1.6, {
       height: 0,
       ease: 'expo.inOut',
-      stagger: 0.4
+      stagger: 0.4,
     })
     .to('.overlay-bottom', 1.6, {
       width: 0,
       ease: 'expo.inOut',
       delay: -0.8,
       stagger: {
-        amount: 0.4
-      }
-    }).to('.intro-overlay', 0, { css: { display: 'none' } })
+        amount: 0.4,
+      },
+    })
+    .to('.intro-overlay', 0, {
+      css: { display: 'none' },
+    })
     .from('.case-image img', 1.6, {
       scale: 1.4,
       ease: 'expo.inOut',
       delay: -2,
       stagger: {
-        amount: 0.4
+        amount: 0.4,
       },
-      onComplete: completeAnimation
-    });
-};
+      onComplete: completeAnimation,
+    })
+}
 
-const Home = () => {
-  const [animationComplete, setAnimationComplete] = useState(false);
+const Home = ({ dimensions }) => {
+  const [animationComplete, setAnimationComplete] = useState(false)
 
   const completeAnimation = () => {
-    setAnimationComplete(true);
+    setAnimationComplete(true)
   }
 
+  useEffect(() => {
+    homeAnimation(completeAnimation)
+  }, [])
 
   useEffect(() => {
-    //On load Timeline GSAP 
-    homeAnimation(completeAnimation);
-
-  }, []);
+    let vh = dimensions.height * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  }, [dimensions.width])
 
   return (
     <>
-      {animationComplete === false ? <IntroOverlay /> : ""}
+      {animationComplete === false ? <IntroOverlay /> : ''}
       <Banner />
       <Cases />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
